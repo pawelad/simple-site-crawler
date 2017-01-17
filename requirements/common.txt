@@ -1,0 +1,5 @@
+aiodns>=1.1.1
+aiohttp>=1.2.0
+beautifulsoup4>=4.5.3
+cchardet>=1.1.2
+html5lib>=1.0b10
