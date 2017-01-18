@@ -32,6 +32,14 @@ From PyPI:
 $ pip3 install simple-site-crawler
 ```
 
+With git clone:
+
+```
+$ git clone https://github.com/pawelad/simple-site-crawler
+$ pip3 install -r simple-site-crawler/requirements.txt
+$ cd simple-site-crawler/bin
+```
+
 ## Usage
 
 ```
