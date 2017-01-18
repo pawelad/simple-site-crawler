@@ -1,4 +1,10 @@
 # simple-site-crawler
+[![Build status](https://img.shields.io/travis/pawelad/simple-site-crawler.svg)][travis]
+[![Test coverage](https://img.shields.io/coveralls/pawelad/simple-site-crawler.svg)][coveralls]
+[![PyPI version](https://img.shields.io/pypi/v/simple-site-crawler.svg)][pypi]
+[![Python versions](https://img.shields.io/pypi/pyversions/simple-site-crawler.svg)][pypi]
+[![License](https://img.shields.io/github/license/pawelad/simple-site-crawler.svg)][license]
+
 Simple website crawler that asynchronously crawls a website and all subpages
 that it can find, along with static content that they rely on. You can either
 use it as a library, inside your Python project or check out the provided CLI
@@ -76,8 +82,11 @@ Developed and maintained by [Paweł Adamczak][pawelad].
 Released under [MIT License][license].
 
 
-[pawelad]: https://github.com/pawelad
+[coveralls]: https://coveralls.io/github/pawelad/simple-site-crawler
 [crawler]: http://aosabook.org/en/500L/a-web-crawler-with-asyncio-coroutines.html
 [github]: https://github.com/pawelad/simple-site-crawler
 [github add issue]: https://github.com/pawelad/simple-site-crawler/issues/new
 [license]: https://github.com/pawelad/simple-site-crawler/blob/master/LICENSE
+[pawelad]: https://github.com/pawelad
+[pypi]: https://pypi.python.org/pypi/simple-site-crawler
+[travis]: https://travis-ci.org/pawelad/simple-site-crawler
