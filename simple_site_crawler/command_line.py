@@ -37,6 +37,10 @@ def cli(max_tasks, export_to_xml, url):
         # Create a standard 'sitemap.xml' from found URLs
         urls = [page for page in sitemap.crawled_pages.keys()]
         generate_sitemap_xml(urls)
+
+        click.secho(
+            "Sitemap saved as 'sitemap.xml'", fg='yellow'
+        )
     else:
         # Print sitemap to stdout
         for webpage in sitemap.crawled_pages.values():
