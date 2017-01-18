@@ -28,7 +28,6 @@ def cli(max_tasks, export_to_xml, url):
     )
 
     loop.run_until_complete(sitemap.crawl_website())
-    loop.close()
     end_time = time.time()
 
     run_time = end_time - start_time
@@ -41,6 +40,7 @@ def cli(max_tasks, export_to_xml, url):
         click.secho(
             "Sitemap saved as 'sitemap.xml'", fg='yellow'
         )
+        click.echo()
     else:
         # Print sitemap to stdout
         for webpage in sitemap.crawled_pages.values():
