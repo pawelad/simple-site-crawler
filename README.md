@@ -36,7 +36,7 @@ $ pip3 install simple-site-crawler
 
 ```
 $ simple-site-crawler --help                      
-Usage: sitemap-gen [OPTIONS] URL
+Usage: simple-site-crawler [OPTIONS] URL
 
   Simple website crawler that generates its sitemap and can either print it
   (and its static content) or export it to standard XML format.
