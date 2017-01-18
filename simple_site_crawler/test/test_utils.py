@@ -57,4 +57,3 @@ def test_render_children_with_custom_prefixes():
     )
 
     assert expected_outcome == rendered_children
-
