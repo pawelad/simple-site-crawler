@@ -4,8 +4,8 @@ from click.testing import CliRunner
 from simple_site_crawler.command_line import cli
 
 
-# Module fixtures
-@pytest.fixture(scope='module')
+# Fixtures
+@pytest.fixture(scope='function')
 def runner():
     """Get CliRunner"""
     return CliRunner()

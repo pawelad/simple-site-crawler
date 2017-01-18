@@ -53,6 +53,6 @@ class Webpage:
         """Helper class for getting all JavaScript files from HTML source"""
         return [
             a.get('src')
-            for a in self.soup.find_all('script',  type='text/javascript')
+            for a in self.soup.find_all('script')
             if a.get('src')
         ]
