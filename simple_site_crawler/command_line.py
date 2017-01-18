@@ -2,8 +2,8 @@ import asyncio
 import click
 import time
 
-from sitemap_gen import SitemapGenerator
-from sitemap_gen.utils import generate_sitemap_xml, render_children
+from simple_site_crawler import SiteCrawler
+from simple_site_crawler.utils import generate_sitemap_xml, render_children
 
 
 @click.command()
@@ -17,12 +17,12 @@ def cli(max_tasks, export_to_xml, url):
     Simple website crawler that generates its sitemap and can either print it
     (and its static content) or export it to standard XML format.
 
-    See https://github.com/pawelad/python-sitemap-gen for more info.
+    See https://github.com/pawelad/simple-site-crawler for more info.
     """
     start_time = time.time()
     loop = asyncio.get_event_loop()
 
-    sitemap = SitemapGenerator(
+    sitemap = SiteCrawler(
         url=url,
         max_tasks=max_tasks,
     )
@@ -38,7 +38,7 @@ def cli(max_tasks, export_to_xml, url):
         urls = [page for page in sitemap.crawled_pages.keys()]
         generate_sitemap_xml(urls)
     else:
-        # Print the sitemap to stdout
+        # Print sitemap to stdout
         for webpage in sitemap.crawled_pages.values():
             click.secho(webpage.url, fg='yellow')
 

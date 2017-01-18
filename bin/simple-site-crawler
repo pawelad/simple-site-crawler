@@ -5,11 +5,11 @@ import sys
 
 try:
     # Installed system wide
-    from sitemap_gen.command_line import cli
+    from simple_site_crawler.command_line import cli
 except ImportError:
     # Try to look for the source code locally
     sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-    from sitemap_gen.command_line import cli
+    from simple_site_crawler.command_line import cli
 
 
 if __name__ == '__main__':

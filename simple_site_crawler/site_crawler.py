@@ -4,12 +4,12 @@ from collections import OrderedDict
 from urllib.parse import urlsplit
 
 
-from sitemap_gen.webpage import Webpage
+from simple_site_crawler.webpage import Webpage
 
 
-class SitemapGenerator:
+class SiteCrawler:
     """
-    Sitemap generator that uses `asyncio` and `aiohttp` libraries to
+    Site crawler that uses `asyncio` and `aiohttp` libraries to
     asynchronously crawl the website and create its sitemap
     """
     def __init__(self, url, max_tasks=100):

@@ -1,6 +1,6 @@
 # simple-site-crawler
 Simple website crawler that asynchronously crawls a website and all subpages
-that it could find, along with static content that they rely on. You can either
+that it can find, along with static content that they rely on. You can either
 use it as a library, inside your Python project or check out the provided CLI
 that can currently show you the crawled data (links, images, CSS and Javascript
 files) for each found site amd create a `sitemap.xml` file.
@@ -35,7 +35,7 @@ Usage: sitemap-gen [OPTIONS] URL
   Simple website crawler that generates its sitemap and can either print it
   (and its static content) or export it to standard XML format.
 
-  See https://github.com/pawelad/python-sitemap-gen for more info.
+  See https://github.com/pawelad/simple-site-crawler for more info.
 
 Options:
   -t, --max-tasks INTEGER  Maximum allowed number of async tasks.

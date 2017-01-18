@@ -32,12 +32,15 @@ def generate_sitemap_xml(urls, filename='sitemap.xml'):
 
 def render_children(iterable, prefix='│   ├── ', last_item_prefix='│   └── '):
     """
-    Helper for rendering element children
+    Simple helper for rendering element children
 
-    :param iterable:
-    :param prefix:
-    :param last_item_prefix:
-    :return:
+    :param iterable: children container
+    :type iterable: iterable object
+    :param prefix: string that will prefix the child element
+    :type prefix: str
+    :param last_item_prefix: string that will prefix the last child elemment
+    :return: rendered children string
+    :rtype: str
     """
     s = ''
 
