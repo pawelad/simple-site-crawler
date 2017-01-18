@@ -1,0 +1,9 @@
+include *.md
+include *.txt
+include *.yml
+include LICENSE
+include tox.ini
+recursive-include requirements *.txt
+recursive-include simple_site_crawler *.html
+recursive-include simple_site_crawler *.py
+recursive-include simple_site_crawler *.xml
