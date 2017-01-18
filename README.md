@@ -53,8 +53,8 @@ Options:
 There's no proper documentation as of now, but the code is commented and
 *should* be pretty straightforward to use.
 
-But feel free to ask me via [email](mailto:pawel.ad@gmail.com) or 
-[GitHub issues][github add issue] if anything is unclear.
+That said - feel free to ask me either via [email](mailto:pawel.ad@gmail.com)
+or [GitHub issues][github add issue] if anything is unclear.
 
 ## Tests
 Package was tested with the help of `py.test` and `tox` on Python 3.5 and 3.6
@@ -62,8 +62,7 @@ Package was tested with the help of `py.test` and `tox` on Python 3.5 and 3.6
 
 Code coverage is available at [Coveralls][coveralls].
 
-To run tests yourself you need to set environment variables with access token
-before running `tox` inside the repository:
+To run tests yourself you need to run `tox` inside the repository:
 
 ```shell
 $ pip install -r requirements/dev.txt
@@ -74,7 +73,7 @@ $ tox
 Package source code is available at [GitHub][github].
 
 Feel free to use, ask, fork, star, report bugs, fix them, suggest enhancements,
-add functionality and point out any mistakes.
+add functionality and point out any mistakes. Thanks!
 
 ## Authors
 Developed and maintained by [Paweł Adamczak][pawelad].
