@@ -54,6 +54,7 @@ Usage: simple-site-crawler [OPTIONS] URL
 Options:
   -t, --max-tasks INTEGER  Maximum allowed number of async tasks.
   -e, --export-to-xml      Export sitemap to XML file.
+  -s, --suppress           Suppress printing output to stdout.
   --help                   Show this message and exit.
 ```
 
