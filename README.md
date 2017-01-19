@@ -9,7 +9,7 @@ Simple website crawler that asynchronously crawls a website and all subpages
 that it can find, along with static content that they rely on. You can either
 use it as a library, inside your Python project or check out the provided CLI
 that can currently show you the crawled data (links, images, CSS and Javascript
-files) for each found site amd create a `sitemap.xml` file.
+files) for each found site and create a `sitemap.xml` file.
 
 Created primarily to play with `asyncio`, `aiohttp` and the new `async/await`
 syntax, so:
