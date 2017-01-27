@@ -27,32 +27,32 @@ class Webpage:
 
     def get_website_links(self):
         """Helper method for getting all links from HTML source"""
-        return {
+        return list({
             a.get('href')
             for a in self.soup.select('a')
             if a.get('href')
-        }
+        })
 
     def get_website_images(self):
         """Helper class for getting all images from HTML source"""
-        return {
+        return list({
             a.get('src')
             for a in self.soup.select('img')
             if a.get('src')
-        }
+        })
 
     def get_website_css(self):
         """Helper class for getting all CSS files from HTML source"""
-        return {
+        return list({
             a.get('href')
             for a in self.soup.select('link[rel=stylesheet]')
             if a.get('href')
-        }
+        })
 
     def get_website_javascript(self):
         """Helper class for getting all JavaScript files from HTML source"""
-        return {
+        return list({
             a.get('src')
             for a in self.soup.find_all('script')
             if a.get('src')
-        }
+        })
