@@ -43,7 +43,9 @@ class SiteCrawler:
         """
         domain = urlsplit(url).netloc
 
-        if url not in self.crawled_pages.keys() and domain == self.root_domain:
+        if url not in self.crawled_pages and domain == self.root_domain:
+            # Make sure we don't the add same URL to the queue twice
+            self.crawled_pages[url] = None
             self.queue.put_nowait(url)
 
     async def crawl_webpage(self, session, url):
