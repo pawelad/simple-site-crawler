@@ -7,7 +7,7 @@ from simple_site_crawler.site_crawler import SiteCrawler  # noqa
 
 
 __title__ = 'simple-site-crawler'
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 __author__ = 'Paweł Adamczak'
 __license__ = 'MIT'
 __url__ = 'https://github.com/pawelad/simple-site-crawler'
