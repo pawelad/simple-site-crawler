@@ -1,3 +1,6 @@
+"""
+Test `simple_site_crawler.site_crawler` file
+"""
 import asyncio
 import random
 from collections import OrderedDict

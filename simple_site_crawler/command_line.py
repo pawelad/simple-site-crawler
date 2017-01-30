@@ -1,3 +1,6 @@
+"""
+Simple command line wrapper around `site_crawler.SiteCrawler`
+"""
 import asyncio
 import time
 

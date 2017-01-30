@@ -1,3 +1,6 @@
+"""
+Site crawler class implementation
+"""
 import asyncio
 from collections import OrderedDict
 from urllib.parse import urlsplit

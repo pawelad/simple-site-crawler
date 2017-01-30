@@ -1,3 +1,6 @@
+"""
+Webpage class implementation
+"""
 from bs4 import BeautifulSoup
 
 

@@ -1,3 +1,6 @@
+"""
+Test `simple_site_crawler.utils` file
+"""
 import os
 from tempfile import NamedTemporaryFile
 

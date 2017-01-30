@@ -1,3 +1,6 @@
+"""
+Test `simple_site_crawler.site_crawler` file
+"""
 import xml.etree.cElementTree as ET
 from xml.dom import minidom
 

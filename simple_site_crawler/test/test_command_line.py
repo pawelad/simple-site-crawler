@@ -1,3 +1,6 @@
+"""
+Test `simple_site_crawler.command_line` file
+"""
 import pytest
 from click.testing import CliRunner
 
