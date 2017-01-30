@@ -1,8 +1,8 @@
-import aiohttp
 import asyncio
 from collections import OrderedDict
 from urllib.parse import urlsplit
 
+import aiohttp
 
 from simple_site_crawler.webpage import Webpage
 

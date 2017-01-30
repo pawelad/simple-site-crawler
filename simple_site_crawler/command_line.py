@@ -1,6 +1,7 @@
 import asyncio
-import click
 import time
+
+import click
 
 from simple_site_crawler import SiteCrawler
 from simple_site_crawler.utils import generate_sitemap_xml, render_children
